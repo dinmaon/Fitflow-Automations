@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitflow Automations</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; line-height:1.6; color:#222; }
+    h1,h2,h3 { margin-bottom:20px; }
+    section { padding:80px 5%; max-width:1200px; margin:auto; }
+    .btn {
+      display:inline-block; padding:14px 28px; font-size:1.1rem;
+      border-radius:10px; text-decoration:none; font-weight:bold;
+      background:#e63946; color:#fff; transition:.2s;
+    }
+    .btn:hover { background:#c12734; }
+    .hero {
+      display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
+      padding:80px 5%; background:#111; color:#fff; max-width:100%;
+    }
+    .hero-content { flex:1; min-width:280px; max-width:50%; }
+    .hero img { max-width:100%; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.4); }
+    .grid-3 {
+      display:grid; gap:30px;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    }
+    .card { background:#fff; border-radius:12px; padding:30px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+    .card svg { display:block; margin-bottom:15px; }
+    .dark { background:#000; color:#fff; }
+    .gradient { background:linear-gradient(to right,#000,#222,#e63946); color:#fff; max-width:100%; }
+    @media(max-width:768px){
+      .hero{flex-direction:column;text-align:center}
+      .hero-content{max-width:100%}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>We Help Fitness Coaches Book More Qualified Appointments</h1>
+      <p>Using high-converting ads + AI follow-up systems so you never waste time chasing leads again.</p>
+      <a href="https://calendly.com/fitflow-automations/strategy-call" class="btn" target="_blank">Book Your Free Strategy Call</a>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd9b?auto=format&fit=crop&w=600&q=80" alt="Coach schedule">
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section>
+    <h2 style="text-align:center;">Tired of Unreliable Leads and an Empty Calendar?</h2>
+    <div class="grid-3">
+      <div class="card">
+        <!-- TrendingUp SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+          <polyline points="17 6 23 6 23 12"></polyline>
+        </svg>
+        <p>Ads that bring in the wrong people</p>
+      </div>
+      <div class="card">
+        <!-- MessageSquare SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v14l4-4h14z"/>
+        </svg>
+        <p>Leads who disappear after one message</p>
+      </div>
+      <div class="card">
+        <!-- Clock SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+        <p>Hours wasted in the DMs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section style="background:#f8f8f8; max-width:100%;">
+    <h2 style="text-align:center;">The Fitflow Growth System</h2>
+    <div class="grid-3">
+      <div class="card">
+        <!-- Target (Bullseye) SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <circle cx="12" cy="12" r="6"/>
+          <circle cx="12" cy="12" r="2"/>
+        </svg>
+        <h3>Attract</h3>
+        <p>Targeted ads that reach your ideal coaching clients.</p>
+      </div>
+      <div class="card">
+        <!-- Bot SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="10" rx="2"/>
+          <circle cx="12" cy="5" r="2"/>
+          <path d="M12 7v4"/>
+          <path d="M8 15h.01"/>
+          <path d="M16 15h.01"/>
+        </svg>
+        <h3>Qualify</h3>
+        <p>AI chats with every lead, filtering out tire-kickers automatically.</p>
+      </div>
+      <div class="card">
+        <!-- Calendar SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        <h3>Book</h3>
+        <p>Only serious prospects end up in your calendar.</p>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:30px;">
+      <a href="https://calendly.com/fitflow-automations/strategy-call" class="btn" target="_blank">Get a Free Strategy Call</a>
+    </p>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="dark" style="max-width:100%;">
+    <div style="max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+      <div>
+        <h2>Why Fitness Coaches Trust Fitflow</h2>
+        <ul>
+          <li>✔ Stop wasting ad spend on unqualified leads</li>
+          <li>✔ Never chase a DM again</li>
+          <li>✔ Book consistent sales calls every week</li>
+          <li>✔ Focus on coaching while we fill your pipeline</li>
+        </ul>
+      </div>
+      <div><img src="https://images.unsplash.com/photo-1600880292089-90e9b6e52f47?auto=format&fit=crop&w=600&q=80" alt="Automation dashboard"></div>
+    </div>
+  </section>
+
+  <!-- Early Adopter -->
+  <section>
+    <h2 style="color:#e63946;">Early Adopter Program 🚀</h2>
+    <p>We’re working with a select group of fitness coaches to prove how powerful this system is.<br>Limited spots • Special pricing • Hands-on setup.</p>
+    <a href="https://calendly.com/fitflow-automations/strategy-call" class="btn" target="_blank">Claim Your Spot Now</a>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="gradient" style="text-align:center;">
+    <h2>Ready to Fill Your Calendar with Qualified Appointments?</h2>
+    <p>Stop stressing over leads. Let us build the system that books them for you.</p>
+    <a href="https://calendly.com/fitflow-automations/strategy-call" class="btn" style="background:#fff;color:#000;" target="_blank">Book Your Free Call</a>
+  </section>
+
+</body>
+</html>
