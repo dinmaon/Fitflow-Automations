@@ -5,34 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fitflow Automations</title>
   <style>
-  section.hero {
-    height: 100vh;
-    display: flex;              /* use flex to position content & image side by side */
-    justify-content: space-between; /* pushes content to left, image to right */
-    align-items: center;        /* vertical center */
-    padding: 20px 40px;
-    box-sizing: border-box;
-  }
+  .hero {
+  position: relative;   /* container for absolute positioning */
+  height: 100vh;        /* full screen height */
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-  .hero-content {
-    max-width: 50%;             /* content takes left half */
-  }
+.hero-image {
+  position: absolute;
+  top: 20px;            /* distance from top */
+  right: 20px;          /* distance from right */
+}
 
-  .hero-image img {
-    max-width: 300px;           /* image width */
-    height: auto;
-  }
+.hero-image img {
+  max-width: 150px;     /* adjust size as needed */
+  height: auto;
+}
 
-  @media screen and (max-width: 768px) {
-    section.hero {
-      flex-direction: column;   /* stack content & image on mobile */
-      text-align: center;
-    }
-
-    .hero-content, .hero-image img {
-      max-width: 100%;
-    }
-  }
 </style>
 
   <style>
@@ -75,7 +65,7 @@
       <a href="https://calendly.com/fitflow-automations/strategy-call" class="btn" target="_blank">Book Your Free Strategy Call</a>
     </div>
     <div>
-      <img src="/fitflow logo.png" alt=Fitflow">
+      <img src="fitflow-logo.png" alt=Fitflow">
     </div>
   </section>
 
