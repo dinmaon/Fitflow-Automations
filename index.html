@@ -85,7 +85,7 @@
       .hero{
         flex-direction:column;
         text-align:center;
-        padding:40px 5%;
+        padding:100px 5% 120px 5%; /* increase hero section height */
       }
       .hero-content{ max-width:100%; margin-top:50px; }
       .hero h1{ font-size:2rem; }
@@ -106,11 +106,13 @@
       /* Button adjustments for mobile */
       .btn {
         display:block;
-        width:100%;
-        max-width:100%;
-        margin:15px auto;
-        padding:14px 0; /* remove horizontal padding */
+        width:auto; /* allow button to adjust for text */
+        min-width:200px; /* optional minimum width */
+        max-width:90%; /* still responsive */
+        margin:20px auto;
+        padding:14px 0;
         font-size:1.1rem;
+        white-space:nowrap; /* keep text on one line */
       }
     }
   </style>
