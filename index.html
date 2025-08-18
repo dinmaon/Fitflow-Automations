@@ -38,7 +38,8 @@
       position:relative;
       display:flex; flex-wrap:wrap; align-items:center;
       justify-content:flex-start;
-      padding:80px 5%; background:#111; color:#fff; width:100%;
+      padding:80px 5% 90px 5%; /* reduced bottom padding */
+      background:#111; color:#fff; width:100%;
     }
     .hero-content { flex:1; min-width:280px; max-width:50%; }
     .hero h1 { font-size:3rem; font-weight:900; line-height:1.2; }
@@ -85,7 +86,7 @@
       .hero{
         flex-direction:column;
         text-align:center;
-        padding:100px 5% 120px 5%; /* increase hero section height */
+        padding:80px 5% 50px 5%; /* reduce bottom padding more */
       }
       .hero-content{ max-width:100%; margin-top:50px; }
       .hero h1{ font-size:2rem; }
@@ -106,13 +107,13 @@
       /* Button adjustments for mobile */
       .btn {
         display:block;
-        width:auto; /* allow button to adjust for text */
-        min-width:200px; /* optional minimum width */
-        max-width:90%; /* still responsive */
-        margin:20px auto;
+        width:auto; 
+        min-width:200px; 
+        max-width:90%; 
+        margin:10px auto 0 auto; /* reduce top margin and bottom space */
         padding:14px 0;
         font-size:1.1rem;
-        white-space:nowrap; /* keep text on one line */
+        white-space:nowrap; 
       }
     }
   </style>
