@@ -5,42 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fitflow Automations</title>
   <style>
-  .hero {
-  position: relative;   /* container for absolute positioning */
-  height: 100vh;        /* full screen height */
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.hero-image {
-  position: absolute;
-  top: 20px;            /* distance from top */
-  right: 20px;          /* distance from right */
-}
-
-.hero-image img {
-  max-width: 150px;     /* adjust size as needed */
-  height: auto;
-}
-
-</style>
-
-  <style>
     body { margin:0; font-family:Arial, sans-serif; line-height:1.6; color:#222; }
     h1,h2,h3 { margin-bottom:20px; }
-    section { padding:80px 5%; max-width:1200px; margin:auto; }
+    section { padding:80px 5%; width:75%; margin:auto; box-sizing:border-box; }
     .btn {
       display:inline-block; padding:14px 28px; font-size:1.1rem;
       border-radius:10px; text-decoration:none; font-weight:bold;
       background:#e63946; color:#fff; transition:.2s;
     }
     .btn:hover { background:#c12734; }
+
+    /* Hero */
     .hero {
-      display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
-      padding:80px 5%; background:#111; color:#fff; max-width:100%;
+      position:relative;
+      display:flex; flex-wrap:wrap; align-items:center;
+      justify-content:flex-start;
+      padding:80px 5%; background:#111; color:#fff; width:100%;
     }
     .hero-content { flex:1; min-width:280px; max-width:50%; }
-    .hero img { max-width:100%; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.4); }
+    .hero h1 { font-size:3rem; font-weight:900; line-height:1.2; }
+    .hero p { font-size:1.25rem; margin-top:20px; }
+    .hero-image {
+      position:absolute;
+      top:50%;
+      right:20px;
+      transform:translateY(-50%);
+      max-width:150px;
+    }
+    .hero-image img { width:100%; height:auto; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.4); }
+
     .grid-3 {
       display:grid; gap:30px;
       grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -48,10 +41,31 @@
     .card { background:#fff; border-radius:12px; padding:30px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
     .card svg { display:block; margin-bottom:15px; }
     .dark { background:#000; color:#fff; }
-    .gradient { background:linear-gradient(to right,#000,#222,#e63946); color:#fff; max-width:100%; }
+    .gradient { background:linear-gradient(to right,#000,#222,#e63946); color:#fff; width:100%; text-align:center; }
+
+    /* Centralized sections */
+    .centralized { text-align:center; }
+
+    /* Aligned checklist */
+    .checklist { list-style:none; padding:0; margin:40px auto 0 auto; max-width:600px; text-align:left; }
+    .checklist li {
+      position: relative;
+      padding-left: 30px;  /* space for checkmark */
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    .checklist li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #e63946;
+      font-weight: bold;
+    }
+
     @media(max-width:768px){
       .hero{flex-direction:column;text-align:center}
       .hero-content{max-width:100%}
+      section { width:90%; }
     }
   </style>
 </head>
@@ -64,14 +78,14 @@
       <p>Using high-converting ads + AI follow-up systems so you never waste time chasing leads again.</p>
       <a href="https://calendly.com/fitflow-automations/strategy-call" class="btn" target="_blank">Book Your Free Strategy Call</a>
     </div>
-    <div>
-      <img src="fitflow logo.png" alt=Fitflow">
+    <div class="hero-image">
+      <img src="fitflow_logo.png" alt="Fitflow">
     </div>
   </section>
 
   <!-- Problem -->
   <section>
-    <h2 style="text-align:center;">Tired of Unreliable Leads and an Empty Calendar?</h2>
+    <h2 class="centralized">Tired of Unreliable Leads and an Empty Calendar?</h2>
     <div class="grid-3">
       <div class="card">
         <!-- TrendingUp SVG -->
@@ -100,8 +114,8 @@
   </section>
 
   <!-- Solution -->
-  <section style="background:#f8f8f8; max-width:100%;">
-    <h2 style="text-align:center;">The Fitflow Growth System</h2>
+  <section style="background:#f8f8f8;">
+    <h2 class="centralized">The Fitflow Growth System</h2>
     <div class="grid-3">
       <div class="card">
         <!-- Target (Bullseye) SVG -->
@@ -137,36 +151,31 @@
         <p>Only serious prospects end up in your calendar.</p>
       </div>
     </div>
-    <p style="text-align:center; margin-top:30px;">
+    <p class="centralized" style="margin-top:30px;">
       <a href="https://calendly.com/fitflow-automations/strategy-call" class="btn" target="_blank">Get a Free Strategy Call</a>
     </p>
   </section>
 
   <!-- Why Choose Us -->
-  <section class="dark" style="max-width:100%;">
-    <div style="max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
-      <div>
-        <h2>Why Fitness Coaches Trust Fitflow</h2>
-        <ul>
-          <li>✔ Stop wasting ad spend on unqualified leads</li>
-          <li>✔ Never chase a DM again</li>
-          <li>✔ Book consistent sales calls every week</li>
-          <li>✔ Focus on coaching while we fill your pipeline</li>
-        </ul>
-      </div>
-      <div><img src="https://images.unsplash.com/photo-1600880292089-90e9b6e52f47?auto=format&fit=crop&w=600&q=80" alt="Automation dashboard"></div>
-    </div>
+  <section class="dark centralized">
+    <h2>Why Fitness Coaches Trust Fitflow</h2>
+    <ul class="checklist">
+      <li>Stop wasting ad spend on unqualified leads</li>
+      <li>Never chase a DM again</li>
+      <li>Book consistent sales calls every week</li>
+      <li>Focus on coaching while we fill your pipeline</li>
+    </ul>
   </section>
 
   <!-- Early Adopter -->
-  <section>
+  <section class="centralized">
     <h2 style="color:#e63946;">Early Adopter Program 🚀</h2>
     <p>We’re working with a select group of fitness coaches to prove how powerful this system is.<br>Limited spots • Special pricing • Hands-on setup.</p>
     <a href="https://calendly.com/fitflow-automations/strategy-call" class="btn" target="_blank">Claim Your Spot Now</a>
   </section>
 
   <!-- Final CTA -->
-  <section class="gradient" style="text-align:center;">
+  <section class="gradient">
     <h2>Ready to Fill Your Calendar with Qualified Appointments?</h2>
     <p>Stop stressing over leads. Let us build the system that books them for you.</p>
     <a href="https://calendly.com/fitflow-automations/strategy-call" class="btn" style="background:#fff;color:#000;" target="_blank">Book Your Free Call</a>
