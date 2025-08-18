@@ -87,20 +87,29 @@
         text-align:center;
         padding:40px 5%;
       }
-      .hero-content{ max-width:100%; }
+      .hero-content{ max-width:100%; margin-top:50px; }
       .hero h1{ font-size:2rem; }
       .hero p{ font-size:1rem; }
-      .hero-image { max-width:250px; margin:20px auto 0 auto; position:relative; transform:none; }
+
+      /* Hero logo adjustments for mobile */
+      .hero-image {
+        position:absolute;
+        top:20px;
+        left:20px;
+        transform:none;
+        max-width:80px; /* mini logo size */
+      }
+
       .grid-3 { grid-template-columns:1fr; gap:20px; }
       .section-inner { padding:0 20px; }
-      
+
       /* Button adjustments for mobile */
       .btn {
         display:block;
         width:100%;
         max-width:100%;
         margin:15px auto;
-        padding:14px 0; /* remove extra horizontal padding */
+        padding:14px 0; /* remove horizontal padding */
         font-size:1.1rem;
       }
     }
@@ -110,13 +119,13 @@
 
   <!-- Hero -->
   <section class="hero">
+    <div class="hero-image">
+      <img src="fitflow_logo.png" alt="Fitflow">
+    </div>
     <div class="hero-content">
       <h1>We Help Fitness Coaches Book More Qualified Appointments</h1>
       <p>Using high-converting ads + AI follow-up systems so you never waste time chasing leads again.</p>
       <a href="https://calendly.com/mylifeaschi/30min" class="btn" target="_blank">Book Your Free Strategy Call</a>
-    </div>
-    <div class="hero-image">
-      <img src="fitflow_logo.png" alt="Fitflow">
     </div>
   </section>
 
