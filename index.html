@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -43,15 +43,14 @@
     }
     .hero-content { flex:1; min-width:280px; max-width:50%; }
 
-    /* Original hero h1 kept, but we override with specific classes below */
-    .hero h1 { font-size:3rem; font-weight:900; line-height:1.2; }
-
-    /* New headline styles */
+    /* Headline styles */
     .headline-main { 
-      font-size:3.5rem; 
+      font-size:clamp(2rem, 6vw, 3.5rem); /* ✅ responsive scaling */
       font-weight:900; 
       line-height:1.15; 
       margin:0 0 12px 0;
+      white-space:nowrap; /* stay on one line */
+      overflow-wrap:normal;
     }
     .headline-sub {
       font-size:1.6rem; 
@@ -109,8 +108,8 @@
       }
       .hero-content{ max-width:100%; margin-top:50px; }
 
-      /* Make main heading bigger than subheading on mobile too */
-      .headline-main{ font-size:2.4rem; }
+      /* Headline shrinks on mobile */
+      .headline-main{ font-size:clamp(1.8rem, 8vw, 2.4rem); } 
       .headline-sub{ font-size:1.3rem; line-height:1.5; margin-bottom:18px; }
 
       /* Hero logo adjustments for mobile */
@@ -131,7 +130,7 @@
         width:auto; 
         min-width:200px; 
         max-width:90%; 
-        margin:10px auto 0 auto; /* reduce top margin and bottom space */
+        margin:10px auto 0 auto; 
         padding:14px 0;
         font-size:1.1rem;
         white-space:nowrap; 
