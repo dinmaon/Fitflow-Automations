@@ -42,7 +42,26 @@
       background:#111; color:#fff; width:100%;
     }
     .hero-content { flex:1; min-width:280px; max-width:50%; }
+
+    /* Original hero h1 kept, but we override with specific classes below */
     .hero h1 { font-size:3rem; font-weight:900; line-height:1.2; }
+
+    /* New headline styles */
+    .headline-main { 
+      font-size:3.5rem; 
+      font-weight:900; 
+      line-height:1.15; 
+      margin:0 0 12px 0;
+    }
+    .headline-sub {
+      font-size:1.6rem; 
+      font-weight:600; 
+      line-height:1.4; 
+      color:#eaeaea;
+      margin:0 0 20px 0;
+      max-width:48ch;
+    }
+
     .hero p { font-size:1.25rem; margin-top:20px; }
     .hero-image {
       position:absolute;
@@ -89,8 +108,10 @@
         padding:80px 5% 50px 5%; /* reduce bottom padding more */
       }
       .hero-content{ max-width:100%; margin-top:50px; }
-      .hero h1{ font-size:2rem; }
-      .hero p{ font-size:1rem; }
+
+      /* Make main heading bigger than subheading on mobile too */
+      .headline-main{ font-size:2.4rem; }
+      .headline-sub{ font-size:1.3rem; line-height:1.5; margin-bottom:18px; }
 
       /* Hero logo adjustments for mobile */
       .hero-image {
@@ -126,8 +147,8 @@
       <img src="fitflow_logo.png" alt="Fitflow">
     </div>
     <div class="hero-content">
-      <h1>We Help Fitness Coaches Book More Qualified Appointments</h1>
-      <p>Using high-converting ads + AI follow-up systems so you never waste time chasing leads again.</p>
+      <h1 class="headline-main">Fitness Coaches...</h1>
+      <h2 class="headline-sub">Implement AI Into Your Business To Scale to 10 qualified appointments in 30 days</h2>
       <a href="https://calendly.com/mylifeaschi/30min" class="btn" target="_blank">Book Your Free Strategy Call</a>
     </div>
   </section>
